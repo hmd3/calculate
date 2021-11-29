@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/Linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/beizhu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="备注：3√5→3n√x5        3^5→3x^n5        3!→3!1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></EditText>
+
+        <EditText
+            android:id="@+id/beizhu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="备注：√5→1√x5       5^2→5x^21"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></EditText>
+
+
+        <EditText
+            android:id="@+id/Calculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Calculator"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></EditText>
+
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="right"
+            android:inputType="textPersonName"
+            android:text="请输入"
+            tools:ignore="MissingConstraints"></EditText>
+
+        <EditText
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:editable="true"
+            android:ems="10"
+            android:gravity="right"
+            android:inputType="textPersonName"
+            android:text="结果"
+            tools:ignore="MissingConstraints"></EditText>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/ngenhaox"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+
+                android:text="n√x" />
+
+            <Button
+                android:id="@+id/xn"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="x^n"/>
+            <Button
+                android:id="@+id/njiecheng"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="n!"/>
+            <Button
+                android:id="@+id/cls"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="cls"/>
+            <Button
+                android:id="@+id/back"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="back"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/zuokuohao"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+
+                android:text="（" />
+
+            <Button
+                android:id="@+id/youkuohao"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="）"/>
+            <Button
+                android:id="@+id/lifangm"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="m^3"/>
+            <Button
+                android:id="@+id/lifangdm"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="dm^3"/>
+            <Button
+                android:id="@+id/lifangcm"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="cm^3"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/genhaox"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="√x"/>
+            <Button
+                android:id="@+id/xfang"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="x^2"/>
+            <Button
+                android:id="@+id/mod"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="mod"/>
+            <Button
+                android:id="@+id/zhengchu"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="//"/>
+            <Button
+                android:id="@+id/chu"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="/"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/lnx"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="lnx"/>
+            <Button
+                android:id="@+id/sevent"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="7"/>
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="8"/>
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="9"/>
+            <Button
+                android:id="@+id/cheng"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="*"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/logx"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="logx"/>
+            <Button
+                android:id="@+id/four"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="4"/>
+            <Button
+                android:id="@+id/five"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="5"/>
+            <Button
+                android:id="@+id/six"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="6"/>
+            <Button
+                android:id="@+id/jian"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/sinx"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="sinx"/>
+            <Button
+                android:id="@+id/one"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+            <Button
+                android:id="@+id/two"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+            <Button
+                android:id="@+id/three"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+            <Button
+                android:id="@+id/jia"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/cosx"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="cosx"/>
+            <Button
+                android:id="@+id/bin"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="bin"/>
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+            <Button
+                android:id="@+id/dot"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="."/>
+            <Button
+                android:id="@+id/dengyu"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="="/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
